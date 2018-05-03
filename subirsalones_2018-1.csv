@@ -1,0 +1,201 @@
+#;BLOQUE;SEÑALIZACIÓN;TIPO MOBILIARIO;FIJO/MOVIL;CAPACIDAD ;ÁREA ÚTIL;EXT;MÓVIL XPRESS
+1;Au;AU_101;Mesa trapezoidal con silla móviles;Movil;26;62,6;5601;Si
+2;Au;AU_102;Mesa trapezoidal con silla móviles;Movil;48;62,6;5602;Si
+3;Au;AU_103;Mesa trapezoidal con silla móviles;Movil;26;62,6;5603;Si
+4;Au;AU_104;Mesa trapezoidal con silla móviles;Movil;48;62,6;5604;Si
+5;Au;AU_107;Silla móvil, mesa móvil;Movil;36;46,3;5605;Si
+6;Au;AU_108;Pupitre universitario;Movil;17;21,9;5606;No
+7;Au;AU_201;Mesa trapezoidal con silla móviles;Movil;44;59,8;5608;Si
+8;Au;AU_202;Pupitre universitario;Movil;40;37,9;5609;SI
+9;Au;AU_203;Silla móvil, mesa móvil;Movil;48;59,8;5610;SI
+10;Au;AU_204;Pupitre universitario;Movil;40;37,9;5611;No
+11;Au;AU_205;Silla móvil, mesa móvil;Movil;40;59,8;5612;SI
+12;Au;AU_206;Mesa trapezoidal con silla móviles;Movil;44;59,8;5613;SI
+13;Au;AU_207;Silla móvil, mesa móvil;Movil;30;42,5;5614;SI
+14;Au;AU_208;Pupitre universitario;Movil;27;30,9;5615;No
+15;Au;AU_209;Silla móvil y mesa fija;Fijo;27;45,8;5616;SI
+16;Au;AU_210;Pupitre universitario;Movil;18;21,4;5617;No
+17;Au;AU_301;Pupitre universitario;Movil;29;29,4;5619;No
+18;Au;AU_302;Pupitre universitario;Movil;31;37,0;5620;No
+19;Au;AU_303;Pupitre universitario;Movil;31;29,4;5621;No
+20;Au;AU_304;Pupitre universitario;Movil;28;37,1;5622;No
+21;Au;AU_305;Pupitre universitario;Movil;29;29,4;5623;No
+22;Au;AU_306;Silla móvil, mesa móvil;Movil;32;45,8;5624;Si
+23;Au;AU_307;Pupitre universitario;Movil;31;29,4;5625;No
+24;Au;AU_308;Silla móvil, mesa móvil;Movil;30;45,8;5626;Si
+25;Au;AU_309;Silla móvil, mesa móvil;Movil;28;42,5;5627;Si
+26;Au;AU_310;Pupitre universitario;Movil;27;31,0;5628;No
+27;Au;AU_311;Pupitre universitario;Movil;19;21,3;5629;No
+28;Au;AU_312;Pupitre universitario;Movil;19;21,3;5630;No
+29;Au;AU_401;Silla móvil, mesa móvil;Movil;40;46,0;5631;Si
+30;Au;AU_402;Silla móvil, mesa móvil;Movil;40;46,0;5632;Si
+31;Au;AU_403;Mesa trapezoidal con silla móviles;Movil;36;46,6;5633;Si
+32;Au;AU_404;Mesa trapezoidal con silla móviles;Movil;36;43,7;5634;Si
+33;B;B_201;Silla móvil y mesa fija;Fijo;51;122,8;1439;No
+34;B;B_202;Silla móvil y mesa fija;Fijo;110;154,6;1440;No
+35;B;B_203;Silla móvil y mesa fija;Fijo;53;88,6;1441;No
+36;B;B_401;Silla móvil y mesa fija;Fijo;81;159,2;N/A;No (es salas de computo también)
+37;B;B_402;Silla móvil y mesa fija;Fijo;99;186,1;N/A;No (es salas de computo también)
+38;C;C_104;Silla móvil y mesa fija;Fijo;100;130,8;;si
+39;C;C_105;Silla móvil y mesa fija;Fijo;60;86,7;;si
+40;C;C_106;Silla móvil, mesa móvil;Movil;22;42,3;;si
+41;C;C_107;Silla móvil, mesa móvil;Movil;22;42,9;;si
+42;C;C_108;Silla móvil, mesa móvil;Movil;22;40,2;;si
+43;C;C_204;Silla móvil, mesa móvil;Movil;22;42,6;;si
+44;C;C_205;Silla móvil, mesa móvil;Movil;22;42,6;;si
+45;C;C_206;Silla móvil, mesa móvil;Movil;22;43,2;;si
+46;C;C_207;Silla móvil, mesa móvil;Movil;22;42,6;;si
+47;C;C_209;Silla móvil y mesa fija;Fijo;57;88,1;;si
+48;C;C_210;Silla móvil, mesa móvil;Movil;22;42,6;;si
+49;C;C_211;Silla móvil, mesa móvil;Movil;22;42,2;;si
+50;C;C_212;Silla móvil, mesa móvil;Movil;22;42,8;;si
+51;C;C_213;Silla móvil, mesa móvil;Movil;22;40,4;;si
+52;C;C_307;Silla móvil, mesa móvil;Movil;60;89,7;;si
+53;C;C_308;Silla móvil, mesa móvil;Movil;60;89,8;;si
+54;C;C_309;Silla móvil, mesa móvil;Movil;60;89,7;;si
+55;G;G_101;Silla móvil y mesa fija;Fijo;84;120,6;5501;No
+56;G;G_102;Silla móvil y mesa fija;Fijo;20;48,6;5502;No
+57;K2;K2_101;Silla móvil, mesa móvil;Movil;40;68,4;N/A;No
+58;LL;LL_001;Silla móvil y mesa fija;Fijo;39;79,6;5093;No
+59;LL;LL_002;Silla móvil y mesa fija;Fijo;39;76,6;5094;No
+60;LL;LL_101;Pupitre universitario;Movil;47;51,7;5076;SI
+61;LL;LL_102;Pupitre universitario;Movil;47;51,7;5077;SI
+62;LL;LL_103;Pupitre universitario;Movil;27;64,5;5078;SI
+63;LL;LL_104;Pupitre universitario;Movil;38;38,0;5079;SI
+64;LL;LL_105;Pupitre universitario;Movil;38;37,8;5080;SI
+65;LL;LL_106;Pupitre universitario;Movil;36;38,0;5081;SI
+66;LL;LL_107;Pupitre universitario;Movil;36;38,0;5082;SI
+67;LL;LL_108;Pupitre universitario;Movil;36;38,0;5083;SI
+68;LL;LL_201;Silla móvil y mesa fija;Fijo;32;51,7;5084;Si
+69;LL;LL_202;Silla móvil y mesa fija;Fijo;32;51,7;5085;Si
+70;LL;LL_203;Silla móvil y mesa fija;Fijo;32;52,4;5086;Si
+71;LL;LL_205;Silla móvil y mesa fija;Fijo;32;51,2;5087;Si
+72;LL;LL_206;Silla móvil y mesa fija;Fijo;32;51,2;5088;Si
+73;LL;LL_301;Pupitre universitario;Movil;52;51,6;5089;No
+74;LL;LL_302;Pupitre universitario;Movil;52;51,6;5090;No
+75;LL;LL_303;Pupitre universitario;Movil;50;51,5;5091;No
+76;LL;LL_304;Pupitre universitario;Movil;50;50,8;5092;No
+77;M;M_100;Silla móvil y mesa fija;Fijo;63;72,1;N/A;No
+78;ML;ML_110;Silla móvil, mesa móvil;Movil;10;16,3;N/A;SI
+79;ML;ML_111;Silla móvil, mesa móvil;Movil;10;16,3;N/A;SI
+80;ML;ML_113;Silla móvil, mesa móvil;Movil;10;16,3;N/A;SI
+81;ML;ML_114;Silla móvil, mesa móvil;Movil;10;16,3;N/A;SI
+82;ML;ML_116;Silla móvil, mesa móvil;Movil;10;16,3;N/A;SI
+83;ML;ML_117;Silla móvil, mesa móvil;Movil;10;16,3;N/A;SI
+84;ML;ML_119;Silla móvil, mesa móvil;Movil;10;16,3;N/A;SI
+85;ML;ML_120;Silla móvil, mesa móvil;Movil;10;17,6;N/A;SI
+86;ML;ML_509;Silla móvil y mesa fija;Fijo;61;85,4;1613;Si
+87;ML;ML_510;Silla móvil y mesa fija;Fijo;69;98,1;1617;Si
+88;ML;ML_511;Silla móvil y mesa fija;Fijo;61;85,4;1615;Si
+89;ML;ML_512;Silla móvil y mesa fija;Fijo;61;92,2;1621;Si
+90;ML;ML_513;Silla móvil y mesa fija;Fijo;61;85,4;1614;Si
+91;ML;ML_514;Silla móvil y mesa fija;Fijo;69;98,1;1620;Si
+92;ML;ML_515;Silla móvil, mesa móvil;Movil;44;114,9;1628;Si
+93;ML;ML_516;Silla móvil, mesa móvil;Movil;44;121,9;1618;Si
+94;ML;ML_603;Silla móvil y mesa fija;Fijo;117;165,6;1626;Si
+95;ML;ML_604;Silla móvil y mesa fija;Fijo;81;125,7;1616;Si
+96;ML;ML_606;Silla móvil y mesa fija;Fijo;81;125,7;1612;Si
+97;ML;ML_607;Silla móvil y mesa fija;Fijo;81;125,7;1624;Si
+98;ML;ML_608;Silla móvil y mesa fija;Fijo;117;165,5;1631;Si
+99;ML;ML_614;Silla móvil, mesa móvil;Movil;44;109,6;1627;SI
+100;ML;ML_615;Silla móvil y mesa fija;Fijo;80;109,6;1623;SI
+101;ML;ML_617;Silla móvil y mesa fija;Fijo;94;146,7;1625;SI
+102;O;O_100;Pupitre universitario;Movil;24;38,2;5255;No
+103;O;O_101;Silla y superficie abatible fijas;Fijo;121;94,0;5250;No
+104;O;O_102;Silla y superficie abatible fijas;Fijo;121;94,0;5251;No
+105;O;O_103;Silla y superficie abatible fijas;Fijo;121;94,0;5252;No
+106;O;O_104;Silla y superficie abatible fijas;Fijo;121;94,0;5253;No
+107;O;O_105;Silla móvil y mesa fija;Fijo;62;72,7;5254;No
+108;O;O_202;Silla móvil y mesa fija;Fijo;62;70,6;5257;No
+109;O;O_203;Silla móvil y mesa fija;Fijo;62;70,6;5258;No
+110;O;O_204;Silla móvil y mesa fija;Fijo;62;70,6;5259;No
+111;O;O_205;Silla móvil y mesa fija;Fijo;62;72,7;5260;No
+112;O;O_301;Silla móvil y mesa fija;Fijo;56;64,2;5261;No
+113;O;O_302;Silla móvil y mesa fija;Fijo;56;64,2;5262;No
+114;O;O_303;Silla móvil y mesa fija;Fijo;56;64,2;5263;No
+115;O;O_304;Silla móvil y mesa fija;Fijo;56;64,2;5264;No
+116;O;O_305;Silla móvil y mesa fija;Fijo;62;72,7;5265;No
+117;O;O_401;Silla móvil y mesa fija;Fijo;50;57,8;5267;No
+118;O;O_402;Silla móvil y mesa fija;Fijo;50;57,8;5268;No
+119;O;O_403;Silla móvil y mesa fija;Fijo;50;57,8;5269;No
+120;O;O_404;Silla móvil y mesa fija;Fijo;50;57,8;5270;No
+121;O;O_405;Silla móvil y mesa fija;Fijo;44;60,9;5271;No
+122;Pu;PU_100;Pupitre universitario;Movil;28;32,9;N/A;No
+123;Pu;PU_200;Pupitre universitario;Movil;32;32,8;N/A;No
+124;Pu;PU_300;Pupitre universitario;Movil;35;32,6;N/A;No
+125;Q;Q_306;Silla móvil y mesa fija;Fijo;48;86,3;1454;SI
+126;Q;Q_307;Silla móvil y mesa fija;Fijo;42;88,1;1455;SI
+127;Q;Q_308;Silla móvil y mesa fija;Fijo;27;44,5;1456;SI
+128;Q;Q_405;Silla móvil y mesa fija;Fijo;70;114,9;N/A;SI
+129;R;R_109;Pupitre universitario;Movil;37;37,5;N/A;No
+130;R;R_110;Pupitre universitario;Movil;46;46,8;N/A;No
+131;R;R_111;Silla y superficie abatible fijas;Fijo;70;83,0;N/A;No
+132;R;R_112;Silla y superficie abatible fijas;Fijo;77;83,2;N/A;No
+133;R;R_113;Silla y superficie abatible fijas;Fijo;77;83,5;N/A;No
+134;R;R_209;Silla y superficie abatible fijas;Fijo;192;172,1;N/A;No
+135;R;R_210;Silla y superficie abatible fijas;Fijo;192;172,8;N/A;No
+136;Rga;RGA_101;Silla móvil, mesa móvil;Movil;66;81,2;;No
+137;Sd;SD_201;Silla móvil, mesa móvil;Movil;26;58,8;N/A;Si
+138;Sd;SD_202;Silla móvil, mesa móvil;Movil;26;58,8;N/A;Si
+139;Sd;SD_203;Silla móvil, mesa móvil;Movil;26;58,8;N/A;Si
+140;Sd;SD_204;Silla móvil, mesa móvil;Movil;26;58,8;N/A;Si
+141;Sd;SD_205;Silla móvil, mesa móvil;Movil;26;58,8;N/A;Si
+142;Sd;SD_206;Silla móvil, mesa móvil;Movil;26;58,8;N/A;Si
+143;Sd;SD_207;Silla móvil, mesa móvil;Movil;24;58,2;N/A;Si
+144;Sd;SD_301;Silla móvil y mesa fija;Fijo;26;58,8;N/A;Si
+145;Sd;SD_302;Silla móvil y mesa fija;Fijo;26;58,8;N/A;Si
+146;Sd;SD_303;Silla móvil y mesa fija;Fijo;26;58,8;N/A;Si
+147;Sd;SD_304;Silla móvil y mesa fija;Fijo;26;58,8;N/A;Si
+148;Sd;SD_305;Silla móvil y mesa fija;Fijo;26;58,8;N/A;Si
+149;Sd;SD_306;Silla móvil y mesa fija;Fijo;26;58,8;N/A;Si
+150;Sd;SD_307;Silla móvil y mesa fija;Fijo;26;58,2;N/A;Si
+151;Sd;SD_701;Silla móvil y mesa fija;Fijo;65;140,0;1113;Si
+152;Sd;SD_702;Silla móvil y mesa fija;Fijo;65;140,0;1117;Si
+153;Sd;SD_703;Silla móvil y mesa fija;Fijo;65;140,9;1116;Si
+154;Sd;SD_704;Silla móvil, mesa móvil;Movil;60;144,8;1106;Si
+155;Sd;SD_715;Silla móvil y mesa fija;Fijo;65;140,4;1109;Si
+156;Sd;SD_716;Silla móvil y mesa fija;Fijo;65;140,4;1105;Si
+157;Sd;SD_801;Silla móvil y mesa fija;Fijo;82;140,0;1110;Si
+158;Sd;SD_802;Silla móvil y mesa fija;Fijo;82;140,0;1115;Si
+159;Sd;SD_803;Silla móvil y mesa fija;Fijo;82;140,0;1163;Si
+160;Sd;SD_804;Silla móvil y mesa fija;Fijo;82;144,8;1118;Si
+161;Sd;SD_805;Silla móvil y mesa fija;Fijo;135;233,1;1119;Si
+162;Sd;SD_806;Silla móvil y mesa fija;Fijo;82;140,4;1164;Si
+163;Sd;SD_807;Silla móvil y mesa fija;Fijo;82;140,4;1114;Si
+164;S1;S1_001;Silla móvil, mesa móvil;Movil;24;50,6;;No
+165;S1;S1_002;Silla móvil, mesa móvil;Movil;24;50,5;;No
+166;S1;S1_003;Silla móvil, mesa móvil;Movil;39;75,8;;No
+167;S1;S1_202;Silla móvil, mesa móvil;Movil;45;67,0;;No
+168;TX;TX_602;Silla móvil, mesa móvil;Movil;30;54,3;;No
+169;TX;TX_603;Silla móvil, mesa móvil;Movil;30;48,4;;No
+170;W;W_101;Silla móvil y mesa fija;Fijo;87;136,2;5000;Si
+171;W;W_102;Silla móvil y mesa fija;Fijo;87;133,5;5001;Si
+172;W;W_201;Silla móvil y mesa fija;Fijo;24;55,8;5004;Si
+173;W;W_202;Silla móvil y mesa fija;Fijo;24;54,8;5005;Si
+174;W;W_203;Silla móvil y mesa fija;Fijo;24;54,8;5006;Si
+175;W;W_204;Silla móvil y mesa fija;Fijo;42;82,4;5007;Si
+176;W;W_205;Silla móvil y mesa fija;Fijo;24;55,2;5008;Si
+177;W;W_401;Silla móvil y mesa fija;Fijo;42;83,4;5013;Si
+178;W;W_402;Silla móvil y mesa fija;Fijo;40;81,8;5014;Si
+179;W;W_403;Silla móvil y mesa fija;Fijo;42;81,2;5015;Si
+180;W;W_404;Silla móvil y mesa fija;Fijo;79;139,7;5016;Si
+181;W;W_501;Silla móvil y mesa fija;Fijo;24;55,0;5017;Si
+182;W;W_502;Silla móvil y mesa fija;Fijo;24;55,0;5018;Si
+183;W;W_503;Silla móvil y mesa fija;Fijo;24;54,8;5019;Si
+184;W;W_504;Silla móvil y mesa fija;Fijo;42;82,3;5020;Si
+185;W;W_505;Silla móvil y mesa fija;Fijo;42;82,6;5021;Si
+186;W;W_506;Silla móvil y mesa fija;Fijo;40;82,8;5022;Si
+187;Y;Y_101;Silla móvil, mesa móvil;Movil;60;96,0;;No
+188;Y;Y_111B;Silla móvil, mesa móvil;Movil;24;43,6;;No
+189;Z;Z_101;Pupitre universitario;Movil;41;45,2;N/A;No
+190;Z;Z_102;Pupitre universitario;Movil;37;43,0;N/A;No
+191;Z;Z_103;Pupitre universitario;Movil;35;40,1;N/A;No
+192;Z;Z_104;Pupitre universitario;Movil;32;32,9;N/A;No
+193;Z;Z_105;Pupitre universitario;Movil;27;28,9;N/A;No
+194;Z;Z_110;Pupitre universitario;Movil;47;52,9;N/A;No
+195;Z;Z_201;Silla móvil, mesa móvil;Movil;36;42,3;;No
+196;Z;Z_202;Silla móvil, mesa móvil;Movil;34;46,4;;No
+197;Z;Z_203;Silla móvil, mesa móvil;Movil;40;72,0;;No
+198;Z;Z_212;Silla móvil, mesa móvil;Movil;30;52,5;;No
+;;;;;;;;
+;;TOTAL:;203 SALONES GENERALES;CAP. TOTAL:;9384;14027,3332;;:ÁREA TOTAL
