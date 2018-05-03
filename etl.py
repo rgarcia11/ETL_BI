@@ -3,12 +3,12 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import *
-
+import pandas as pd
 engine = create_engine('sqlite:///bi.db')
 Base = declarative_base()
 Session = sessionmaker(bind=engine)
 session = Session()
-
+semestre_actual = "2018-01"
 #Definir esquema
 class Franja(Base):
     __tablename__ = "franja"
@@ -17,6 +17,7 @@ class Franja(Base):
     hora = Column('hora',String)#,primary_key=True)
     minuto = Column('minuto',String)#,primary_key=True)
     duracion = Column('duracion',String)#,primary_key=True)
+    clases = relationship('Clase')
 
 class Salon(Base):
     __tablename__='salon'
@@ -28,6 +29,7 @@ class Salon(Base):
     tiene_movil_express = Column('tiene_movil_express',String)
     tipo_mobiliario = Column('tipo_mobiliario',String)
     es_fijo = Column('es_fijo',String)
+    clases = relationship('Clase')
 
 class Seccion(Base):
     __tablename__='seccion'
@@ -41,12 +43,14 @@ class Seccion(Base):
     profesor1 = Column('profesor1',String)
     profesor2 = Column('profesor2',String)
     profesor3 = Column('profesor3',String)
+    clases = relationship('Clase')
 
 class Curso(Base):
     __tablename__='curso'
     materia=Column('materia',String,primary_key=True)
     nombre = Column('nombre',Integer)
     creditos = Column('creditos',String)
+    clases = relationship('Clase')
 
 class Clase(Base):
     __tablename__='clase'
@@ -56,10 +60,10 @@ class Clase(Base):
     salon_senhalizacion=Column('salon',String,ForeignKey('salon.senhalizacion'))
     franja_id=Column('franja',Integer,ForeignKey('franja.id'))
 
-    curso = relationship("Curso")
-    seccion = relationship("Seccion")
-    salon = relationship("Salon")
-    franja = relationship("Franja")
+    #curso = relationship("Curso", backref='person', lazy='dynamic')
+    #seccion = relationship("Seccion", backref='person', lazy='dynamic')
+    #salon = relationship("Salon", backref='person', lazy='dynamic')
+    #franja = relationship("Franja", backref='person', lazy='dynamic')
 
 Franja.__table__.create(bind=engine,checkfirst=True)
 Salon.__table__.create(bind=engine,checkfirst=True)
@@ -74,6 +78,11 @@ users_json = requests.get(url).json()
 url2 = 'https://jsonplaceholder.typicode.com/posts/'
 uploads_json = requests.get(url2).json()
 """
+
+scraped = pd.read_csv("cursos_scraped_formato.csv",sep=";")
+scraped_lista_filas = scraped.to_dict(orient='records')
+row_ejemplo = scraped_lista_filas[0]
+
 #Transformar
 """
 from datetime import datetime, timedelta
@@ -103,53 +112,70 @@ for result in uploads_json:
 
 """
 franjas=[]
-franjita={}
-franjita['id']=16
-franjita['dia']="01"
-franjita['minuto']="30"
-franjita['hora']="14"
-franjita['duracion']="01:20"
-franjas.append(franjita)
 salones=[]
+secciones=[]
+cursos=[]
+clases=[]
+
+franjita={}
+franjita['id']=1
+franjita['dia']=row_ejemplo['1Horas'][:4]
+franjita['minuto']=row_ejemplo['1Horas'][:4][2:]
+franjita['hora']=row_ejemplo['1Horas'][:4][:2]
+franjita['duracion']="01:20"
+nueva_franja = Franja(**franjita)
+
 saloncito={}
-saloncito['senhalizacion']="Au_102"
-saloncito['edificio']="Au"
+saloncito['senhalizacion']=row_ejemplo['1Salon']
+saloncito['edificio']=row_ejemplo['1Salon'][:2]
 saloncito['capacidad']="26"
 saloncito['extension']="5601"
 saloncito['area']="62,6"
 saloncito['tiene_movil_express']="Si"
 saloncito['tipo_mobiliario']="Nesa trapezoidal con silla movil"
 saloncito['es_fijo']="Movil"
-salones.append(saloncito)
-secciones=[]
+nuevo_salon = Salon(**saloncito)
+
+
 seccioncita={}
-seccioncita['id']="2018-01-10127"
-seccioncita['crn']=10126
-seccioncita['semestre']="2018-01"
-seccioncita['numero_seccion']=1
-seccioncita['cupos']=121
-seccioncita['inscritos']=91
-seccioncita['disponibles']=30
-seccioncita['profesor1']="DIAZ MATAJIRA LUIS"
+seccioncita['id']='{}-{}'.format(semestre_actual,str(row_ejemplo['CRN']))
+seccioncita['crn']=row_ejemplo['CRN']
+seccioncita['semestre']=semestre_actual
+seccioncita['numero_seccion']=row_ejemplo['Seccion']
+seccioncita['cupos']=row_ejemplo['Cupo']
+seccioncita['inscritos']=row_ejemplo['Inscritos']
+seccioncita['disponibles']=row_ejemplo['Disponible']
+seccioncita['profesor1']=row_ejemplo['1Instructor']
 seccioncita['profesor2']=""
 seccioncita['profesor3']=""
-secciones.append(seccioncita)
-cursos=[]
+nueva_seccion = Seccion(**seccioncita)
+
+
 curcito = {}
-curcito['materia']="ADMI-1102"
-curcito['nombre']="FUNDAM.ADMON Y GERENCIA (ADMI)"
-curcito['creditos']="3"
-cursos.append(curcito)
-clases=[]
+curcito['materia']=row_ejemplo['Materia']
+curcito['nombre']=row_ejemplo['Titulo']
+curcito['creditos']=row_ejemplo['Creditos']
+nuevo_curso = Curso(**curcito)
+
+
 clasecita={}
 clasecita['id']=2
 #curso_temp = session.query(Curso).filter_by(materia="ADMI-1101")
 #if curso_temp
-clasecita['curso']=Curso(materia="ADMI-1101")
-clasecita['seccion']=Seccion(id="2018-01-10126")
-clasecita['salon']=Salon(senhalizacion="Au_101")
-clasecita['franja']=Franja(id=15)
-clases.append(clasecita)
+clasecita['curso_materia']=Curso(materia=curcito['materia'])
+clasecita['seccion_id']=Seccion(id=seccioncita['id'])
+clasecita['salon_senhalizacion']=Salon(senhalizacion=saloncito['senhalizacion'])
+clasecita['franja_id']=Franja(id=franjita['id'])
+nueva_clase = Clase(**clasecita)
+nueva_franja.clases.append(nueva_clase)
+nuevo_salon.clases.append(nueva_clase)
+nueva_seccion.clases.append(nueva_clase)
+nuevo_curso.clases.append(nueva_clase)
+clases.append(nueva_clase)
+franjas.append(nueva_franja)
+salones.append(nuevo_salon)
+secciones.append(nueva_seccion)
+cursos.append(nuevo_curso)
 #Cargar
 """
 Session = sessionmaker(bind=engine)
@@ -164,18 +190,19 @@ session.commit()
 """
 
 for f in franjas:
-    row = Franja(**f)
-    session.add(row)
+    #row = Franja(**f)
+    session.add(f)
 for s in salones:
-    row = Salon(**s)
-    session.add(row)
+    #row = Salon(**s)
+    session.add(s)
 for s in secciones:
-    row = Seccion(**s)
-    session.add(row)
+    #row = Seccion(**s)
+    session.add(s)
 for c in cursos:
-    row = Curso(**c)
-    session.add(row)
+    #row = Curso(**c)
+    session.add(c)
 for c in clases:
-    row = Clase(**c)
-    session.add(row)
+    #row = Clase(**c)
+    print(c)
+    session.add(c)
 session.commit()
