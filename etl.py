@@ -6,7 +6,7 @@ from sqlalchemy.sql import *
 import pandas as pd
 engine = create_engine('sqlite:///bi.db')
 Base = declarative_base()
-Session = sessionmaker(bind=engine)
+Session = sessionmaker(bind=engine,autoflush=False)
 session = Session()
 semestre_actual = "2018-01"
 #Definir esquema
@@ -71,124 +71,150 @@ Seccion.__table__.create(bind=engine,checkfirst=True)
 Curso.__table__.create(bind=engine,checkfirst=True)
 Clase.__table__.create(bind=engine,checkfirst=True)
 #Extraer
-"""
-import requests
-url = 'https://randomuser.me/api/?results=10'
-users_json = requests.get(url).json()
-url2 = 'https://jsonplaceholder.typicode.com/posts/'
-uploads_json = requests.get(url2).json()
-"""
 
+#Lectura del archivo csv de scraping
 scraped = pd.read_csv("cursos_scraped_formato.csv",sep=";")
 scraped_lista_filas = scraped.to_dict(orient='records')
-row_ejemplo = scraped_lista_filas[0]
+
 
 #Transformar
-"""
-from datetime import datetime, timedelta
-from random import randint
-users, uploads = [], []
-for i, result in enumerate(users_json['results']):
-    row = {}
-    row['UserId'] = i
-    row['Title'] = result['name']['title']
-    row['FirstName'] = result['name']['first']
-    row['LastName'] = result['name']['last']
-    row['Email'] = result['email']
-    row['Username'] = result['login']['username']
-    dob = datetime.strptime(result['dob'],'%Y-%m-%d %H:%M:%S')
-    row['DOB'] = dob.date()
+def seleccionar_datos(row_ejemplo, i,dia,numero_dia):
+    franjita={}
+    franjita['id']=i
+    franjita['dia']=dia
+    franjita['minuto']=row_ejemplo['{}Horas'.format(numero_dia)][:4][2:]
+    franjita['hora']=row_ejemplo['{}Horas'.format(numero_dia)][:4][:2]
+    franjita['duracion']="01:20"
+    nueva_franja = Franja(**franjita)
 
-    users.append(row)
-for result in uploads_json:
-    row = {}
-    row['UploadId'] = result['id']
-    row['UserId'] = result['userId']
-    row['Title'] = result['title']
-    row['Body'] = result['body']
-    delta = timedelta(seconds=randint(1,86400))
-    row['Timestamp'] = datetime.now() - delta
-    uploads.append(row)
+    saloncito={}
+    saloncito['senhalizacion']=row_ejemplo['{}Salon'.format(numero_dia)]
+    saloncito['edificio']=row_ejemplo['{}Salon'.format(numero_dia)][:2]
+    saloncito['capacidad']="26"
+    saloncito['extension']="5601"
+    saloncito['area']="62,6"
+    saloncito['tiene_movil_express']="Si"
+    saloncito['tipo_mobiliario']="Nesa trapezoidal con silla movil"
+    saloncito['es_fijo']="Movil"
+    nuevo_salon = Salon(**saloncito)
 
-"""
+
+    seccioncita={}
+    seccioncita['id']='{}-{}'.format(semestre_actual,str(row_ejemplo['CRN']))
+    seccioncita['crn']=row_ejemplo['CRN']
+    seccioncita['semestre']=semestre_actual
+    seccioncita['numero_seccion']=row_ejemplo['Seccion']
+    seccioncita['cupos']=row_ejemplo['Cupo']
+    seccioncita['inscritos']=row_ejemplo['Inscritos']
+    seccioncita['disponibles']=row_ejemplo['Disponible']
+    seccioncita['profesor1']=row_ejemplo['1Instructor']
+    if not pd.isnull(row_ejemplo['2Instructor']):
+        seccioncita['profesor2']=row_ejemplo['2Instructor']
+    else:
+        seccioncita['profesor2']=""
+    if not pd.isnull(row_ejemplo['3Instructor']):
+        seccioncita['profesor3']=row_ejemplo['3Instructor']
+    else:
+        seccioncita['profesor3']=""
+    nueva_seccion = Seccion(**seccioncita)
+
+
+    curcito = {}
+    curcito['materia']=row_ejemplo['Materia']
+    curcito['nombre']=row_ejemplo['Titulo']
+    curcito['creditos']=row_ejemplo['Creditos']
+    nuevo_curso = Curso(**curcito)
+
+
+    clasecita={}
+    clasecita['id']=i
+    #curso_temp = session.query(Curso).filter_by(materia="ADMI-1101")
+    #if curso_temp
+    clasecita['curso_materia']=Curso(materia=curcito['materia'])
+    clasecita['seccion_id']=Seccion(id=seccioncita['id'])
+    clasecita['salon_senhalizacion']=Salon(senhalizacion=saloncito['senhalizacion'])
+    clasecita['franja_id']=Franja(id=franjita['id'])
+    nueva_clase = Clase(**clasecita)
+    return nueva_franja, nuevo_salon, nueva_seccion, nuevo_curso, nueva_clase
+
 franjas=[]
 salones=[]
 secciones=[]
 cursos=[]
 clases=[]
 
-franjita={}
-franjita['id']=1
-franjita['dia']=row_ejemplo['1Horas'][:4]
-franjita['minuto']=row_ejemplo['1Horas'][:4][2:]
-franjita['hora']=row_ejemplo['1Horas'][:4][:2]
-franjita['duracion']="01:20"
-nueva_franja = Franja(**franjita)
+columnas_a_borrar = ['1F. Inicial', '1F. Final', '2F. Inicial', '2F. Final', '3F. Inicial', '3F. Final']
+for columna in columnas_a_borrar:
+    del scraped[columna]
 
-saloncito={}
-saloncito['senhalizacion']=row_ejemplo['1Salon']
-saloncito['edificio']=row_ejemplo['1Salon'][:2]
-saloncito['capacidad']="26"
-saloncito['extension']="5601"
-saloncito['area']="62,6"
-saloncito['tiene_movil_express']="Si"
-saloncito['tipo_mobiliario']="Nesa trapezoidal con silla movil"
-saloncito['es_fijo']="Movil"
-nuevo_salon = Salon(**saloncito)
+i = 0
+for diccionario in scraped_lista_filas:
+
+    dias1 = str(diccionario['1Dias'])
+    dias2 = str(diccionario['2Dias'])
+    dias3 = str(diccionario['3Dias'])
+    dias = {'1':dias1,'2':dias2,'3':dias3}
+    for numero_dia in dias.keys():
+        for dia in dias[numero_dia]:
+            numero_dia=1
+            nueva_franja, nuevo_salon, nueva_seccion, nuevo_curso, nueva_clase = seleccionar_datos(diccionario,i,dia,numero_dia)
+            print(nueva_franja,nuevo_salon,nueva_seccion,nuevo_curso,nueva_clase)
+            franja_existe = 0
+            for f in franjas:
+                if nueva_franja.id == f.id:
+                    franja_existe = 1
+                    f.clases.append(nueva_clase)
+                    break
+            if not franja_existe:
+                if not pd.isnull(nueva_franja.id):
+                    nueva_franja.clases.append(nueva_clase)
+                    franjas.append(nueva_franja)
+
+            salon_existe = 0
+            for s in salones:
+                if nuevo_salon.senhalizacion == s.senhalizacion:
+                    salon_existe = 1
+                    s.clases.append(nueva_clase)
+                    break
+            if not salon_existe:
+                if not pd.isnull(nuevo_salon.senhalizacion):
+                    nuevo_salon.clases.append(nueva_clase)
+                    salones.append(nuevo_salon)
+
+            seccion_existe = 0
+            for s in secciones:
+                if nueva_seccion.id == s.id:
+                    seccion_existe = 1
+                    s.clases.append(nueva_clase)
+                    break
+            if not seccion_existe:
+                if not pd.isnull(nueva_seccion.id):
+                    nueva_seccion.clases.append(nueva_clase)
+                    secciones.append(nueva_seccion)
+
+            curso_existe = 0
+            for c in cursos:
+                if nuevo_curso.materia == c.materia:
+                    curso_existe = 1
+                    c.clases.append(nueva_clase)
+                    break
+            if not curso_existe:
+                if not pd.isnull(nuevo_curso.materia):
+                    nuevo_curso.clases.append(nueva_clase)
+                    cursos.append(nuevo_curso)
+
+            clase_existe = 0
+            for c in clases:
+                if nueva_clase.id == c.id:
+                    clase_existe = 1
+                    break
+            if not clase_existe:
+                if not pd.isnull(nueva_clase.id):
+                    clases.append(nueva_clase)
+            i = i + 1
 
 
-seccioncita={}
-seccioncita['id']='{}-{}'.format(semestre_actual,str(row_ejemplo['CRN']))
-seccioncita['crn']=row_ejemplo['CRN']
-seccioncita['semestre']=semestre_actual
-seccioncita['numero_seccion']=row_ejemplo['Seccion']
-seccioncita['cupos']=row_ejemplo['Cupo']
-seccioncita['inscritos']=row_ejemplo['Inscritos']
-seccioncita['disponibles']=row_ejemplo['Disponible']
-seccioncita['profesor1']=row_ejemplo['1Instructor']
-seccioncita['profesor2']=""
-seccioncita['profesor3']=""
-nueva_seccion = Seccion(**seccioncita)
-
-
-curcito = {}
-curcito['materia']=row_ejemplo['Materia']
-curcito['nombre']=row_ejemplo['Titulo']
-curcito['creditos']=row_ejemplo['Creditos']
-nuevo_curso = Curso(**curcito)
-
-
-clasecita={}
-clasecita['id']=2
-#curso_temp = session.query(Curso).filter_by(materia="ADMI-1101")
-#if curso_temp
-clasecita['curso_materia']=Curso(materia=curcito['materia'])
-clasecita['seccion_id']=Seccion(id=seccioncita['id'])
-clasecita['salon_senhalizacion']=Salon(senhalizacion=saloncito['senhalizacion'])
-clasecita['franja_id']=Franja(id=franjita['id'])
-nueva_clase = Clase(**clasecita)
-nueva_franja.clases.append(nueva_clase)
-nuevo_salon.clases.append(nueva_clase)
-nueva_seccion.clases.append(nueva_clase)
-nuevo_curso.clases.append(nueva_clase)
-clases.append(nueva_clase)
-franjas.append(nueva_franja)
-salones.append(nuevo_salon)
-secciones.append(nueva_seccion)
-cursos.append(nuevo_curso)
 #Cargar
-"""
-Session = sessionmaker(bind=engine)
-session = Session()
-for user in users:
-    row = Users(**user)
-    session.add(row)
-for upload in uploads:
-    row = Uploads(**upload)
-    session.add(row)
-session.commit()
-"""
-
 for f in franjas:
     #row = Franja(**f)
     session.add(f)
