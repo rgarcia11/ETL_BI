@@ -13,10 +13,12 @@ semestre_actual = "2018-01"
 class Franja(Base):
     __tablename__ = "franja"
     id = Column('id',Integer,primary_key=True)
-    dia = Column('dia',String)#,primary_key=True)
-    hora = Column('hora',String)#,primary_key=True)
-    minuto = Column('minuto',String)#,primary_key=True)
-    duracion = Column('duracion',String)#,primary_key=True)
+    dia = Column('dia',String)
+    hora_inicio = Column('hora_inicio',String)
+    minuto_inicio = Column('minuto_inicio',String)
+    hora_fin = Column('hora_fin',String)
+    minuto_fin = Column('minuto_fin',String)
+    duracion = Column('duracion',String)
     clases = relationship('Clase')
 
 class Salon(Base):
@@ -60,11 +62,6 @@ class Clase(Base):
     salon_senhalizacion=Column('salon',String,ForeignKey('salon.senhalizacion'))
     franja_id=Column('franja',Integer,ForeignKey('franja.id'))
 
-    #curso = relationship("Curso", backref='person', lazy='dynamic')
-    #seccion = relationship("Seccion", backref='person', lazy='dynamic')
-    #salon = relationship("Salon", backref='person', lazy='dynamic')
-    #franja = relationship("Franja", backref='person', lazy='dynamic')
-
 Franja.__table__.create(bind=engine,checkfirst=True)
 Salon.__table__.create(bind=engine,checkfirst=True)
 Seccion.__table__.create(bind=engine,checkfirst=True)
@@ -73,29 +70,31 @@ Clase.__table__.create(bind=engine,checkfirst=True)
 #Extraer
 
 #Lectura del archivo csv de scraping
-scraped = pd.read_csv("cursos_scraped_formato.csv",sep=";")
+scraped = pd.read_csv("cursos_scraped_full.csv",sep=";")
 scraped_lista_filas = scraped.to_dict(orient='records')
 
 
 #Transformar
-def seleccionar_datos(row_ejemplo, i,dia,numero_dia):
+def seleccionar_datos(row_ejemplo, i, dia, numero_dia):
     franjita={}
     franjita['id']=i
     franjita['dia']=dia
-    franjita['minuto']=row_ejemplo['{}Horas'.format(numero_dia)][:4][2:]
-    franjita['hora']=row_ejemplo['{}Horas'.format(numero_dia)][:4][:2]
-    franjita['duracion']="01:20"
+    franjita['minuto_inicio']=row_ejemplo['{}Horas'.format(numero_dia)][:4][2:]
+    franjita['hora_inicio']=row_ejemplo['{}Horas'.format(numero_dia)][:4][:2]
+    franjita['minuto_fin']=row_ejemplo['{}Horas'.format(numero_dia)][-4:][2:]
+    franjita['hora_fin']=row_ejemplo['{}Horas'.format(numero_dia)][-4:][:2]
+    franjita['duracion']=abs(int(franjita['hora_fin'])-int(franjita['hora_inicio']))*60 + abs(int(franjita['minuto_fin'])-int(franjita['minuto_inicio']))
     nueva_franja = Franja(**franjita)
 
     saloncito={}
     saloncito['senhalizacion']=row_ejemplo['{}Salon'.format(numero_dia)]
     saloncito['edificio']=row_ejemplo['{}Salon'.format(numero_dia)][:2]
-    saloncito['capacidad']="26"
-    saloncito['extension']="5601"
-    saloncito['area']="62,6"
-    saloncito['tiene_movil_express']="Si"
-    saloncito['tipo_mobiliario']="Nesa trapezoidal con silla movil"
-    saloncito['es_fijo']="Movil"
+    saloncito['capacidad']=row_ejemplo['Capacidad_s{}'.format(numero_dia)]
+    saloncito['extension']=row_ejemplo['Ext_s{}'.format(numero_dia)]
+    saloncito['area']=row_ejemplo['Area util_s{}'.format(numero_dia)]
+    saloncito['tiene_movil_express']=row_ejemplo['Movil Express_s{}'.format(numero_dia)]
+    saloncito['tipo_mobiliario']=row_ejemplo['Tipo Mobiliario_s{}'.format(numero_dia)]
+    saloncito['es_fijo']=row_ejemplo['Fijo/Movil_s{}'.format(numero_dia)]
     nuevo_salon = Salon(**saloncito)
 
 
@@ -128,8 +127,6 @@ def seleccionar_datos(row_ejemplo, i,dia,numero_dia):
 
     clasecita={}
     clasecita['id']=i
-    #curso_temp = session.query(Curso).filter_by(materia="ADMI-1101")
-    #if curso_temp
     clasecita['curso_materia']=Curso(materia=curcito['materia'])
     clasecita['seccion_id']=Seccion(id=seccioncita['id'])
     clasecita['salon_senhalizacion']=Salon(senhalizacion=saloncito['senhalizacion'])
@@ -149,7 +146,6 @@ for columna in columnas_a_borrar:
 
 i = 0
 for diccionario in scraped_lista_filas:
-
     dias1 = str(diccionario['1Dias'])
     dias2 = str(diccionario['2Dias'])
     dias3 = str(diccionario['3Dias'])
@@ -158,7 +154,7 @@ for diccionario in scraped_lista_filas:
         for dia in dias[numero_dia]:
             numero_dia=1
             nueva_franja, nuevo_salon, nueva_seccion, nuevo_curso, nueva_clase = seleccionar_datos(diccionario,i,dia,numero_dia)
-            print(nueva_franja,nuevo_salon,nueva_seccion,nuevo_curso,nueva_clase)
+
             franja_existe = 0
             for f in franjas:
                 if nueva_franja.id == f.id:
@@ -212,23 +208,20 @@ for diccionario in scraped_lista_filas:
                 if not pd.isnull(nueva_clase.id):
                     clases.append(nueva_clase)
             i = i + 1
-
-
 #Cargar
 for f in franjas:
-    #row = Franja(**f)
     session.add(f)
+print('Terminadas las franjas.')
 for s in salones:
-    #row = Salon(**s)
     session.add(s)
+print('Terminados los salones')
 for s in secciones:
-    #row = Seccion(**s)
     session.add(s)
+print('Terminadas las secciones')
 for c in cursos:
-    #row = Curso(**c)
     session.add(c)
+print('Terminados los cursos')
 for c in clases:
-    #row = Clase(**c)
-    print(c)
     session.add(c)
+print('Terminadas las clases')
 session.commit()
