@@ -1,0 +1,188 @@
+senhalizacion,edificio,capacidad,extension,area,tiene_movil_express,tipo_mobiliario,es_fijo
+SD_805,SD,135.0,1119.0,"233,1",Si,"Silla móvil y mesa fija",Fijo
+SD_803,SD,82.0,1163.0,140,Si,"Silla móvil y mesa fija",Fijo
+O_404,O_,50.0,5270.0,"57,8",No,"Silla móvil y mesa fija",Fijo
+LL_304,LL,50.0,5092.0,"50,8",No,"Pupitre universitario",Movil
+C_307,C_,60.0,,"89,7",si,"Silla móvil, mesa móvil",Movil
+C_308,C_,60.0,,"89,8",si,"Silla móvil, mesa móvil",Movil
+O_204,O_,62.0,5259.0,"70,6",No,"Silla móvil y mesa fija",Fijo
+AU_104,AU,48.0,5604.0,"62,6",Si,"Mesa trapezoidal con silla móviles",Movil
+AU_203,AU,48.0,5610.0,"59,8",SI,"Silla móvil, mesa móvil",Movil
+AU_102,AU,48.0,5602.0,"62,6",Si,"Mesa trapezoidal con silla móviles",Movil
+C_209,C_,57.0,,"88,1",si,"Silla móvil y mesa fija",Fijo
+SD_203,SD,26.0,,"58,8",Si,"Silla móvil, mesa móvil",Movil
+AU_205,AU,40.0,5612.0,"59,8",SI,"Silla móvil, mesa móvil",Movil
+AU_107,AU,36.0,5605.0,"46,3",Si,"Silla móvil, mesa móvil",Movil
+LL_205,LL,32.0,5087.0,"51,2",Si,"Silla móvil y mesa fija",Fijo
+SD_201,SD,26.0,,"58,8",Si,"Silla móvil, mesa móvil",Movil
+AU_208,AU,27.0,5615.0,"30,9",No,"Pupitre universitario",Movil
+AU_307,AU,31.0,5625.0,"29,4",No,"Pupitre universitario",Movil
+AU_310,AU,27.0,5628.0,31,No,"Pupitre universitario",Movil
+SD_205,SD,26.0,,"58,8",Si,"Silla móvil, mesa móvil",Movil
+O_401,O_,50.0,5267.0,"57,8",No,"Silla móvil y mesa fija",Fijo
+Q_306,Q_,48.0,1454.0,"86,3",SI,"Silla móvil y mesa fija",Fijo
+B_201,B_,51.0,1439.0,"122,8",No,"Silla móvil y mesa fija",Fijo
+B_401,B_,81.0,,"159,2","No (es salas de computo también)","Silla móvil y mesa fija",Fijo
+SD_802,SD,82.0,1115.0,140,Si,"Silla móvil y mesa fija",Fijo
+SD_801,SD,82.0,1110.0,140,Si,"Silla móvil y mesa fija",Fijo
+LL_303,LL,50.0,5091.0,"51,5",No,"Pupitre universitario",Movil
+O_301,O_,56.0,5261.0,"64,2",No,"Silla móvil y mesa fija",Fijo
+C_105,C_,60.0,,"86,7",si,"Silla móvil y mesa fija",Fijo
+SD_716,SD,65.0,1105.0,"140,4",Si,"Silla móvil y mesa fija",Fijo
+AU_401,AU,40.0,5631.0,46,Si,"Silla móvil, mesa móvil",Movil
+O_302,O_,56.0,5262.0,"64,2",No,"Silla móvil y mesa fija",Fijo
+O_402,O_,50.0,5268.0,"57,8",No,"Silla móvil y mesa fija",Fijo
+O_403,O_,50.0,5269.0,"57,8",No,"Silla móvil y mesa fija",Fijo
+SD_806,SD,82.0,1164.0,"140,4",Si,"Silla móvil y mesa fija",Fijo
+SD_704,SD,60.0,1106.0,"144,8",Si,"Silla móvil, mesa móvil",Movil
+Y_101,Y_,60.0,,96,No,"Silla móvil, mesa móvil",Movil
+O_303,O_,56.0,5263.0,"64,2",No,"Silla móvil y mesa fija",Fijo
+W_204,W_,42.0,5007.0,"82,4",Si,"Silla móvil y mesa fija",Fijo
+SD_702,SD,65.0,1117.0,140,Si,"Silla móvil y mesa fija",Fijo
+LL_302,LL,52.0,5090.0,"51,6",No,"Pupitre universitario",Movil
+LL_301,LL,52.0,5089.0,"51,6",No,"Pupitre universitario",Movil
+B_203,B_,53.0,1441.0,"88,6",No,"Silla móvil y mesa fija",Fijo
+SD_703,SD,65.0,1116.0,"140,9",Si,"Silla móvil y mesa fija",Fijo
+ML_509,ML,61.0,1613.0,"85,4",Si,"Silla móvil y mesa fija",Fijo
+LL_108,LL,36.0,5083.0,38,SI,"Pupitre universitario",Movil
+R_209,R_,192.0,,"172,1",No,"Silla y superficie abatible fijas",Fijo
+O_405,O_,44.0,5271.0,"60,9",No,"Silla móvil y mesa fija",Fijo
+ML_614,ML,44.0,1627.0,"109,6",SI,"Silla móvil, mesa móvil",Movil
+Z_104,Z_,32.0,,"32,9",No,"Pupitre universitario",Movil
+PU_200,PU,32.0,,"32,8",No,"Pupitre universitario",Movil
+M_100,M_,63.0,,"72,1",No,"Silla móvil y mesa fija",Fijo
+AU_403,AU,36.0,5633.0,"46,6",Si,"Mesa trapezoidal con silla móviles",Movil
+ML_608,ML,117.0,1631.0,"165,5",Si,"Silla móvil y mesa fija",Fijo
+W_402,W_,40.0,5014.0,"81,8",Si,"Silla móvil y mesa fija",Fijo
+O_304,O_,56.0,5264.0,"64,2",No,"Silla móvil y mesa fija",Fijo
+C_106,C_,22.0,,"42,3",si,"Silla móvil, mesa móvil",Movil
+AU_402,AU,40.0,5632.0,46,Si,"Silla móvil, mesa móvil",Movil
+SD_807,SD,82.0,1114.0,"140,4",Si,"Silla móvil y mesa fija",Fijo
+R_110,R_,46.0,,"46,8",No,"Pupitre universitario",Movil
+SD_305,SD,26.0,,"58,8",Si,"Silla móvil y mesa fija",Fijo
+ML_511,ML,61.0,1615.0,"85,4",Si,"Silla móvil y mesa fija",Fijo
+W_504,W_,42.0,5020.0,"82,3",Si,"Silla móvil y mesa fija",Fijo
+AU_206,AU,44.0,5613.0,"59,8",SI,"Mesa trapezoidal con silla móviles",Movil
+C_207,C_,22.0,,"42,6",si,"Silla móvil, mesa móvil",Movil
+Q_405,Q_,70.0,,"114,9",SI,"Silla móvil y mesa fija",Fijo
+O_305,O_,62.0,5265.0,"72,7",No,"Silla móvil y mesa fija",Fijo
+R_210,R_,192.0,,"172,8",No,"Silla y superficie abatible fijas",Fijo
+O_203,O_,62.0,5258.0,"70,6",No,"Silla móvil y mesa fija",Fijo
+O_101,O_,121.0,5250.0,94,No,"Silla y superficie abatible fijas",Fijo
+Q_307,Q_,42.0,1455.0,"88,1",SI,"Silla móvil y mesa fija",Fijo
+ML_603,ML,117.0,1626.0,"165,6",Si,"Silla móvil y mesa fija",Fijo
+R_111,R_,70.0,,83,No,"Silla y superficie abatible fijas",Fijo
+ML_604,ML,81.0,1616.0,"125,7",Si,"Silla móvil y mesa fija",Fijo
+R_113,R_,77.0,,"83,5",No,"Silla y superficie abatible fijas",Fijo
+AU_304,AU,28.0,5622.0,"37,1",No,"Pupitre universitario",Movil
+G_101,G_,84.0,5501.0,"120,6",No,"Silla móvil y mesa fija",Fijo
+AU_207,AU,30.0,5614.0,"42,5",SI,"Silla móvil, mesa móvil",Movil
+AU_302,AU,31.0,5620.0,37,No,"Pupitre universitario",Movil
+AU_309,AU,28.0,5627.0,"42,5",Si,"Silla móvil, mesa móvil",Movil
+ML_119,ML,10.0,,"16,3",SI,"Silla móvil, mesa móvil",Movil
+SD_207,SD,24.0,,"58,2",Si,"Silla móvil, mesa móvil",Movil
+ML_607,ML,81.0,1624.0,"125,7",Si,"Silla móvil y mesa fija",Fijo
+O_104,O_,121.0,5253.0,94,No,"Silla y superficie abatible fijas",Fijo
+W_102,W_,87.0,5001.0,"133,5",Si,"Silla móvil y mesa fija",Fijo
+SD_804,SD,82.0,1118.0,"144,8",Si,"Silla móvil y mesa fija",Fijo
+O_103,O_,121.0,5252.0,94,No,"Silla y superficie abatible fijas",Fijo
+O_102,O_,121.0,5251.0,94,No,"Silla y superficie abatible fijas",Fijo
+S1_003,S1,39.0,,"75,8",No,"Silla móvil, mesa móvil",Movil
+ML_606,ML,81.0,1612.0,"125,7",Si,"Silla móvil y mesa fija",Fijo
+ML_510,ML,69.0,1617.0,"98,1",Si,"Silla móvil y mesa fija",Fijo
+AU_210,AU,18.0,5617.0,"21,4",No,"Pupitre universitario",Movil
+AU_306,AU,32.0,5624.0,"45,8",Si,"Silla móvil, mesa móvil",Movil
+W_403,W_,42.0,5015.0,"81,2",Si,"Silla móvil y mesa fija",Fijo
+LL_105,LL,38.0,5080.0,"37,8",SI,"Pupitre universitario",Movil
+Z_101,Z_,41.0,,"45,2",No,"Pupitre universitario",Movil
+Z_203,Z_,40.0,,72,No,"Silla móvil, mesa móvil",Movil
+LL_206,LL,32.0,5088.0,"51,2",Si,"Silla móvil y mesa fija",Fijo
+LL_101,LL,47.0,5076.0,"51,7",SI,"Pupitre universitario",Movil
+SD_202,SD,26.0,,"58,8",Si,"Silla móvil, mesa móvil",Movil
+ML_615,ML,80.0,1623.0,"109,6",SI,"Silla móvil y mesa fija",Fijo
+R_112,R_,77.0,,"83,2",No,"Silla y superficie abatible fijas",Fijo
+B_402,B_,99.0,,"186,1","No (es salas de computo también)","Silla móvil y mesa fija",Fijo
+ML_617,ML,94.0,1625.0,"146,7",SI,"Silla móvil y mesa fija",Fijo
+ML_512,ML,61.0,1621.0,"92,2",Si,"Silla móvil y mesa fija",Fijo
+SD_206,SD,26.0,,"58,8",Si,"Silla móvil, mesa móvil",Movil
+TX_602,TX,30.0,,"54,3",No,"Silla móvil, mesa móvil",Movil
+C_108,C_,22.0,,"40,2",si,"Silla móvil, mesa móvil",Movil
+AU_108,AU,17.0,5606.0,"21,9",No,"Pupitre universitario",Movil
+C_211,C_,22.0,,"42,2",si,"Silla móvil, mesa móvil",Movil
+AU_202,AU,40.0,5609.0,"37,9",SI,"Pupitre universitario",Movil
+S1_202,S1,45.0,,67,No,"Silla móvil, mesa móvil",Movil
+Z_110,Z_,47.0,,"52,9",No,"Pupitre universitario",Movil
+ML_514,ML,69.0,1620.0,"98,1",Si,"Silla móvil y mesa fija",Fijo
+C_212,C_,22.0,,"42,8",si,"Silla móvil, mesa móvil",Movil
+W_202,W_,24.0,5005.0,"54,8",Si,"Silla móvil y mesa fija",Fijo
+AU_209,AU,27.0,5616.0,"45,8",SI,"Silla móvil y mesa fija",Fijo
+SD_204,SD,26.0,,"58,8",Si,"Silla móvil, mesa móvil",Movil
+AU_303,AU,31.0,5621.0,"29,4",No,"Pupitre universitario",Movil
+AU_404,AU,36.0,5634.0,"43,7",Si,"Mesa trapezoidal con silla móviles",Movil
+Z_103,Z_,35.0,,"40,1",No,"Pupitre universitario",Movil
+LL_104,LL,38.0,5079.0,38,SI,"Pupitre universitario",Movil
+AU_311,AU,19.0,5629.0,"21,3",No,"Pupitre universitario",Movil
+Q_308,Q_,27.0,1456.0,"44,5",SI,"Silla móvil y mesa fija",Fijo
+W_503,W_,24.0,5019.0,"54,8",Si,"Silla móvil y mesa fija",Fijo
+W_203,W_,24.0,5006.0,"54,8",Si,"Silla móvil y mesa fija",Fijo
+C_206,C_,22.0,,"43,2",si,"Silla móvil, mesa móvil",Movil
+Z_201,Z_,36.0,,"42,3",No,"Silla móvil, mesa móvil",Movil
+O_202,O_,62.0,5257.0,"70,6",No,"Silla móvil y mesa fija",Fijo
+C_210,C_,22.0,,"42,6",si,"Silla móvil, mesa móvil",Movil
+G_102,G_,20.0,5502.0,"48,6",No,"Silla móvil y mesa fija",Fijo
+ML_114,ML,10.0,,"16,3",SI,"Silla móvil, mesa móvil",Movil
+LL_102,LL,47.0,5077.0,"51,7",SI,"Pupitre universitario",Movil
+Z_212,Z_,30.0,,"52,5",No,"Silla móvil, mesa móvil",Movil
+Z_202,Z_,34.0,,"46,4",No,"Silla móvil, mesa móvil",Movil
+ML_515,ML,44.0,1628.0,"114,9",Si,"Silla móvil, mesa móvil",Movil
+W_205,W_,24.0,5008.0,"55,2",Si,"Silla móvil y mesa fija",Fijo
+W_502,W_,24.0,5018.0,55,Si,"Silla móvil y mesa fija",Fijo
+PU_300,PU,35.0,,"32,6",No,"Pupitre universitario",Movil
+R_109,R_,37.0,,"37,5",No,"Pupitre universitario",Movil
+C_104,C_,100.0,,"130,8",si,"Silla móvil y mesa fija",Fijo
+AU_204,AU,40.0,5611.0,"37,9",No,"Pupitre universitario",Movil
+Y_111B,Y_,24.0,,"43,6",No,"Silla móvil, mesa móvil",Movil
+AU_305,AU,29.0,5623.0,"29,4",No,"Pupitre universitario",Movil
+C_107,C_,22.0,,"42,9",si,"Silla móvil, mesa móvil",Movil
+LL_107,LL,36.0,5082.0,38,SI,"Pupitre universitario",Movil
+AU_308,AU,30.0,5626.0,"45,8",Si,"Silla móvil, mesa móvil",Movil
+K2_101,K2,40.0,,"68,4",No,"Silla móvil, mesa móvil",Movil
+AU_201,AU,44.0,5608.0,"59,8",Si,"Mesa trapezoidal con silla móviles",Movil
+TX_603,TX,30.0,,"48,4",No,"Silla móvil, mesa móvil",Movil
+ML_110,ML,10.0,,"16,3",SI,"Silla móvil, mesa móvil",Movil
+W_201,W_,24.0,5004.0,"55,8",Si,"Silla móvil y mesa fija",Fijo
+W_404,W_,79.0,5016.0,"139,7",Si,"Silla móvil y mesa fija",Fijo
+Z_105,Z_,27.0,,"28,9",No,"Pupitre universitario",Movil
+LL_202,LL,32.0,5085.0,"51,7",Si,"Silla móvil y mesa fija",Fijo
+LL_203,LL,32.0,5086.0,"52,4",Si,"Silla móvil y mesa fija",Fijo
+Z_102,Z_,37.0,,43,No,"Pupitre universitario",Movil
+W_506,W_,40.0,5022.0,"82,8",Si,"Silla móvil y mesa fija",Fijo
+SD_715,SD,65.0,1109.0,"140,4",Si,"Silla móvil y mesa fija",Fijo
+PU_100,PU,28.0,,"32,9",No,"Pupitre universitario",Movil
+W_505,W_,42.0,5021.0,"82,6",Si,"Silla móvil y mesa fija",Fijo
+O_105,O_,62.0,5254.0,"72,7",No,"Silla móvil y mesa fija",Fijo
+AU_301,AU,29.0,5619.0,"29,4",No,"Pupitre universitario",Movil
+S1_001,S1,24.0,,"50,6",No,"Silla móvil, mesa móvil",Movil
+LL_106,LL,36.0,5081.0,38,SI,"Pupitre universitario",Movil
+C_205,C_,22.0,,"42,6",si,"Silla móvil, mesa móvil",Movil
+W_501,W_,24.0,5017.0,55,Si,"Silla móvil y mesa fija",Fijo
+S1_002,S1,24.0,,"50,5",No,"Silla móvil, mesa móvil",Movil
+ML_516,ML,44.0,1618.0,"121,9",Si,"Silla móvil, mesa móvil",Movil
+ML_111,ML,10.0,,"16,3",SI,"Silla móvil, mesa móvil",Movil
+B_202,B_,110.0,1440.0,"154,6",No,"Silla móvil y mesa fija",Fijo
+O_100,O_,24.0,5255.0,"38,2",No,"Pupitre universitario",Movil
+O_205,O_,62.0,5260.0,"72,7",No,"Silla móvil y mesa fija",Fijo
+ML_116,ML,10.0,,"16,3",SI,"Silla móvil, mesa móvil",Movil
+C_204,C_,22.0,,"42,6",si,"Silla móvil, mesa móvil",Movil
+LL_103,LL,27.0,5078.0,"64,5",SI,"Pupitre universitario",Movil
+LL_201,LL,32.0,5084.0,"51,7",Si,"Silla móvil y mesa fija",Fijo
+ML_120,ML,10.0,,"17,6",SI,"Silla móvil, mesa móvil",Movil
+ML_117,ML,10.0,,"16,3",SI,"Silla móvil, mesa móvil",Movil
+ML_113,ML,10.0,,"16,3",SI,"Silla móvil, mesa móvil",Movil
+SD_307,SD,26.0,,"58,2",Si,"Silla móvil y mesa fija",Fijo
+SD_306,SD,26.0,,"58,8",Si,"Silla móvil y mesa fija",Fijo
+SD_304,SD,26.0,,"58,8",Si,"Silla móvil y mesa fija",Fijo
+SD_303,SD,26.0,,"58,8",Si,"Silla móvil y mesa fija",Fijo
+SD_301,SD,26.0,,"58,8",Si,"Silla móvil y mesa fija",Fijo
+SD_302,SD,26.0,,"58,8",Si,"Silla móvil y mesa fija",Fijo
+LL_002,LL,39.0,5094.0,"76,6",No,"Silla móvil y mesa fija",Fijo
