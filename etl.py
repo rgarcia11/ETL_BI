@@ -8,7 +8,7 @@ engine = create_engine('sqlite:///bi.db')
 Base = declarative_base()
 Session = sessionmaker(bind=engine,autoflush=False)
 session = Session()
-semestre_actual = "2018-01"
+archivo = "cursos_scraped_full.csv"
 #Definir esquema
 class Franja(Base):
     __tablename__ = "franja"
@@ -70,7 +70,7 @@ Clase.__table__.create(bind=engine,checkfirst=True)
 #Extraer
 
 #Lectura del archivo csv de scraping
-scraped = pd.read_csv("cursos_scraped_full.csv",sep=";")
+scraped = pd.read_csv(archivo,encoding="ISO-8859-1",sep=";")
 scraped_lista_filas = scraped.to_dict(orient='records')
 
 
@@ -99,9 +99,9 @@ def seleccionar_datos(row_ejemplo, i, dia, numero_dia):
 
 
     seccioncita={}
-    seccioncita['id']='{}-{}'.format(semestre_actual,str(row_ejemplo['CRN']))
+    seccioncita['id']='{}-{}'.format(row_ejemplo['Semestre'],str(row_ejemplo['CRN']))
     seccioncita['crn']=row_ejemplo['CRN']
-    seccioncita['semestre']=semestre_actual
+    seccioncita['semestre']=row_ejemplo['Semestre']
     seccioncita['numero_seccion']=row_ejemplo['Seccion']
     seccioncita['cupos']=row_ejemplo['Cupo']
     seccioncita['inscritos']=row_ejemplo['Inscritos']
@@ -144,8 +144,12 @@ columnas_a_borrar = ['1F. Inicial', '1F. Final', '2F. Inicial', '2F. Final', '3F
 for columna in columnas_a_borrar:
     del scraped[columna]
 
-i = 0
+print('Numero de filas: {}'.format(len(scraped_lista_filas)))
+i = 28279
+filas = 0
 for diccionario in scraped_lista_filas:
+    filas = filas + 1
+    print('Fila numero {}'.format(filas))
     dias1 = str(diccionario['1Dias'])
     dias2 = str(diccionario['2Dias'])
     dias3 = str(diccionario['3Dias'])
@@ -157,7 +161,7 @@ for diccionario in scraped_lista_filas:
 
             franja_existe = 0
             for f in franjas:
-                if nueva_franja.id == f.id:
+                if nueva_franja.dia == f.dia and nueva_franja.hora_inicio == f.hora_inicio and nueva_franja.hora_fin == f.hora_fin and nueva_franja.minuto_inicio == f.minuto_inicio and nueva_franja.minuto_fin == f.minuto_fin:
                     franja_existe = 1
                     f.clases.append(nueva_clase)
                     break
@@ -179,7 +183,7 @@ for diccionario in scraped_lista_filas:
 
             seccion_existe = 0
             for s in secciones:
-                if nueva_seccion.id == s.id:
+                if nueva_seccion.crn == s.crn:
                     seccion_existe = 1
                     s.clases.append(nueva_clase)
                     break
