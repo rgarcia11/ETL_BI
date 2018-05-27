@@ -1,0 +1,276 @@
+,1Salon,Area util_s1,Bloque_s1,Capacidad_s1,Ext_s1,Fijo/Movil_s1,Movil Express_s1,Tipo Mobiliario_s1
+0,ML_515,"114,9",ML,44.0,1628.0,Movil,Si,"Silla móvil, mesa móvil"
+1,O_301,"64,2",O,56.0,5261.0,Fijo,No,Silla móvil y mesa fija
+2,B_202,"154,6",B,110.0,1440.0,Fijo,No,Silla móvil y mesa fija
+3,ML_614,"109,6",ML,44.0,1627.0,Movil,SI,"Silla móvil, mesa móvil"
+4,AU_204,"37,9",Au,40.0,5611.0,Movil,No,Pupitre universitario
+5,ML_516,"121,9",ML,44.0,1618.0,Movil,Si,"Silla móvil, mesa móvil"
+6,AU_401,"46,0",Au,40.0,5631.0,Movil,Si,"Silla móvil, mesa móvil"
+7,W_201,"55,8",W,24.0,5004.0,Fijo,Si,Silla móvil y mesa fija
+8,W_201,"55,8",W,24.0,5004.0,Fijo,Si,Silla móvil y mesa fija
+9,W_201,"55,8",W,24.0,5004.0,Fijo,Si,Silla móvil y mesa fija
+10,W_203,"54,8",W,24.0,5006.0,Fijo,Si,Silla móvil y mesa fija
+11,W_205,"55,2",W,24.0,5008.0,Fijo,Si,Silla móvil y mesa fija
+12,W_201,"55,8",W,24.0,5004.0,Fijo,Si,Silla móvil y mesa fija
+13,W_201,"55,8",W,24.0,5004.0,Fijo,Si,Silla móvil y mesa fija
+14,W_202,"54,8",W,24.0,5005.0,Fijo,Si,Silla móvil y mesa fija
+15,B_203,"88,6",B,53.0,1441.0,Fijo,No,Silla móvil y mesa fija
+16,Z_203,"72,0",Z,40.0,nan,Movil,No,"Silla móvil, mesa móvil"
+17,ML_509,"85,4",ML,61.0,1613.0,Fijo,Si,Silla móvil y mesa fija
+18,SD_803,"140,0",Sd,82.0,1163.0,Fijo,Si,Silla móvil y mesa fija
+19,AU_304,"37,1",Au,28.0,5622.0,Movil,No,Pupitre universitario
+20,S1_001,"50,6",S1,24.0,nan,Movil,No,"Silla móvil, mesa móvil"
+21,AU_209,"45,8",Au,27.0,5616.0,Fijo,SI,Silla móvil y mesa fija
+22,S1_001,"50,6",S1,24.0,nan,Movil,No,"Silla móvil, mesa móvil"
+23,W_203,"54,8",W,24.0,5006.0,Fijo,Si,Silla móvil y mesa fija
+24,W_502,"55,0",W,24.0,5018.0,Fijo,Si,Silla móvil y mesa fija
+25,AU_304,"37,1",Au,28.0,5622.0,Movil,No,Pupitre universitario
+26,W_201,"55,8",W,24.0,5004.0,Fijo,Si,Silla móvil y mesa fija
+27,W_502,"55,0",W,24.0,5018.0,Fijo,Si,Silla móvil y mesa fija
+28,W_205,"55,2",W,24.0,5008.0,Fijo,Si,Silla móvil y mesa fija
+29,W_202,"54,8",W,24.0,5005.0,Fijo,Si,Silla móvil y mesa fija
+30,,,,,,,,
+31,AU_310,"31,0",Au,27.0,5628.0,Movil,No,Pupitre universitario
+32,S1_001,"50,6",S1,24.0,nan,Movil,No,"Silla móvil, mesa móvil"
+33,W_501,"55,0",W,24.0,5017.0,Fijo,Si,Silla móvil y mesa fija
+34,Z_104,"32,9",Z,32.0,nan,Movil,No,Pupitre universitario
+35,W_502,"55,0",W,24.0,5018.0,Fijo,Si,Silla móvil y mesa fija
+36,S1_001,"50,6",S1,24.0,nan,Movil,No,"Silla móvil, mesa móvil"
+37,W_501,"55,0",W,24.0,5017.0,Fijo,Si,Silla móvil y mesa fija
+38,W_201,"55,8",W,24.0,5004.0,Fijo,Si,Silla móvil y mesa fija
+39,AU_308,"45,8",Au,30.0,5626.0,Movil,Si,"Silla móvil, mesa móvil"
+40,W_205,"55,2",W,24.0,5008.0,Fijo,Si,Silla móvil y mesa fija
+41,W_402,"81,8",W,40.0,5014.0,Fijo,Si,Silla móvil y mesa fija
+42,W_204,"82,4",W,42.0,5007.0,Fijo,Si,Silla móvil y mesa fija
+43,W_501,"55,0",W,24.0,5017.0,Fijo,Si,Silla móvil y mesa fija
+44,AU_209,"45,8",Au,27.0,5616.0,Fijo,SI,Silla móvil y mesa fija
+45,W_503,"54,8",W,24.0,5019.0,Fijo,Si,Silla móvil y mesa fija
+46,,,,,,,,
+47,W_503,"54,8",W,24.0,5019.0,Fijo,Si,Silla móvil y mesa fija
+48,R_109,"37,5",R,37.0,nan,Movil,No,Pupitre universitario
+49,SD_204,"58,8",Sd,26.0,nan,Movil,Si,"Silla móvil, mesa móvil"
+50,S1_002,"50,5",S1,24.0,nan,Movil,No,"Silla móvil, mesa móvil"
+51,PU_100,"32,9",Pu,28.0,nan,Movil,No,Pupitre universitario
+52,S1_001,"50,6",S1,24.0,nan,Movil,No,"Silla móvil, mesa móvil"
+53,W_502,"55,0",W,24.0,5018.0,Fijo,Si,Silla móvil y mesa fija
+54,AU_307,"29,4",Au,31.0,5625.0,Movil,No,Pupitre universitario
+55,,,,,,,,
+56,,,,,,,,
+57,,,,,,,,
+58,,,,,,,,
+59,,,,,,,,
+60,,,,,,,,
+61,,,,,,,,
+62,,,,,,,,
+63,,,,,,,,
+64,,,,,,,,
+65,,,,,,,,
+66,,,,,,,,
+67,,,,,,,,
+68,,,,,,,,
+69,,,,,,,,
+70,,,,,,,,
+71,,,,,,,,
+72,,,,,,,,
+73,,,,,,,,
+74,,,,,,,,
+75,,,,,,,,
+76,,,,,,,,
+77,,,,,,,,
+78,,,,,,,,
+79,,,,,,,,
+80,,,,,,,,
+81,,,,,,,,
+82,,,,,,,,
+83,,,,,,,,
+84,,,,,,,,
+85,,,,,,,,
+86,,,,,,,,
+87,,,,,,,,
+88,,,,,,,,
+89,,,,,,,,
+90,,,,,,,,
+91,W_205,"55,2",W,24.0,5008.0,Fijo,Si,Silla móvil y mesa fija
+92,S1_002,"50,5",S1,24.0,nan,Movil,No,"Silla móvil, mesa móvil"
+93,PU_100,"32,9",Pu,28.0,nan,Movil,No,Pupitre universitario
+94,ML_516,"121,9",ML,44.0,1618.0,Movil,Si,"Silla móvil, mesa móvil"
+95,S1_002,"50,5",S1,24.0,nan,Movil,No,"Silla móvil, mesa móvil"
+96,AU_208,"30,9",Au,27.0,5615.0,Movil,No,Pupitre universitario
+97,W_501,"55,0",W,24.0,5017.0,Fijo,Si,Silla móvil y mesa fija
+98,AU_305,"29,4",Au,29.0,5623.0,Movil,No,Pupitre universitario
+99,Z_201,"42,3",Z,36.0,nan,Movil,No,"Silla móvil, mesa móvil"
+100,,,,,,,,
+101,,,,,,,,
+102,,,,,,,,
+103,,,,,,,,
+104,,,,,,,,
+105,,,,,,,,
+106,,,,,,,,
+107,,,,,,,,
+108,,,,,,,,
+109,W_504,"82,3",W,42.0,5020.0,Fijo,Si,Silla móvil y mesa fija
+110,PU_300,"32,6",Pu,35.0,nan,Movil,No,Pupitre universitario
+111,Z_203,"72,0",Z,40.0,nan,Movil,No,"Silla móvil, mesa móvil"
+112,ML_615,"109,6",ML,80.0,1623.0,Fijo,SI,Silla móvil y mesa fija
+113,,,,,,,,
+114,,,,,,,,
+115,,,,,,,,
+116,,,,,,,,
+117,W_203,"54,8",W,24.0,5006.0,Fijo,Si,Silla móvil y mesa fija
+118,,,,,,,,
+119,W_501,"55,0",W,24.0,5017.0,Fijo,Si,Silla móvil y mesa fija
+120,,,,,,,,
+121,AU_202,"37,9",Au,40.0,5609.0,Movil,SI,Pupitre universitario
+122,K2_101,"68,4",K2,40.0,nan,Movil,No,"Silla móvil, mesa móvil"
+123,W_505,"82,6",W,42.0,5021.0,Fijo,Si,Silla móvil y mesa fija
+124,SD_307,"58,2",Sd,26.0,nan,Fijo,Si,Silla móvil y mesa fija
+125,W_205,"55,2",W,24.0,5008.0,Fijo,Si,Silla móvil y mesa fija
+126,O_100,"38,2",O,24.0,5255.0,Movil,No,Pupitre universitario
+127,LL_303,"51,5",LL,50.0,5091.0,Movil,No,Pupitre universitario
+128,W_201,"55,8",W,24.0,5004.0,Fijo,Si,Silla móvil y mesa fija
+129,W_502,"55,0",W,24.0,5018.0,Fijo,Si,Silla móvil y mesa fija
+130,W_201,"55,8",W,24.0,5004.0,Fijo,Si,Silla móvil y mesa fija
+131,W_205,"55,2",W,24.0,5008.0,Fijo,Si,Silla móvil y mesa fija
+132,W_205,"55,2",W,24.0,5008.0,Fijo,Si,Silla móvil y mesa fija
+133,W_501,"55,0",W,24.0,5017.0,Fijo,Si,Silla móvil y mesa fija
+134,W_503,"54,8",W,24.0,5019.0,Fijo,Si,Silla móvil y mesa fija
+135,S1_002,"50,5",S1,24.0,nan,Movil,No,"Silla móvil, mesa móvil"
+136,W_502,"55,0",W,24.0,5018.0,Fijo,Si,Silla móvil y mesa fija
+137,AU_304,"37,1",Au,28.0,5622.0,Movil,No,Pupitre universitario
+138,W_502,"55,0",W,24.0,5018.0,Fijo,Si,Silla móvil y mesa fija
+139,W_205,"55,2",W,24.0,5008.0,Fijo,Si,Silla móvil y mesa fija
+140,W_205,"55,2",W,24.0,5008.0,Fijo,Si,Silla móvil y mesa fija
+141,W_403,"81,2",W,42.0,5015.0,Fijo,Si,Silla móvil y mesa fija
+142,,,,,,,,
+143,,,,,,,,
+144,,,,,,,,
+145,W_201,"55,8",W,24.0,5004.0,Fijo,Si,Silla móvil y mesa fija
+146,,,,,,,,
+147,W_202,"54,8",W,24.0,5005.0,Fijo,Si,Silla móvil y mesa fija
+148,,,,,,,,
+149,,,,,,,,
+150,,,,,,,,
+151,SD_201,"58,8",Sd,26.0,nan,Movil,Si,"Silla móvil, mesa móvil"
+152,,,,,,,,
+153,,,,,,,,
+154,W_203,"54,8",W,24.0,5006.0,Fijo,Si,Silla móvil y mesa fija
+155,W_202,"54,8",W,24.0,5005.0,Fijo,Si,Silla móvil y mesa fija
+156,,,,,,,,
+157,W_404,"139,7",W,79.0,5016.0,Fijo,Si,Silla móvil y mesa fija
+158,ML_606,"125,7",ML,81.0,1612.0,Fijo,Si,Silla móvil y mesa fija
+159,B_401,"159,2",B,81.0,nan,Fijo,No (es salas de computo también),Silla móvil y mesa fija
+160,ML_515,"114,9",ML,44.0,1628.0,Movil,Si,"Silla móvil, mesa móvil"
+161,ML_515,"114,9",ML,44.0,1628.0,Movil,Si,"Silla móvil, mesa móvil"
+162,,,,,,,,
+163,AU_207,"42,5",Au,30.0,5614.0,Movil,SI,"Silla móvil, mesa móvil"
+164,O_103,"94,0",O,121.0,5252.0,Fijo,No,Silla y superficie abatible fijas
+165,,,,,,,,
+166,,,,,,,,
+167,W_506,"82,8",W,40.0,5022.0,Fijo,Si,Silla móvil y mesa fija
+168,AU_402,"46,0",Au,40.0,5632.0,Movil,Si,"Silla móvil, mesa móvil"
+169,LL_108,"38,0",LL,36.0,5083.0,Movil,SI,Pupitre universitario
+170,AU_307,"29,4",Au,31.0,5625.0,Movil,No,Pupitre universitario
+171,LL_303,"51,5",LL,50.0,5091.0,Movil,No,Pupitre universitario
+172,ML_512,"92,2",ML,61.0,1621.0,Fijo,Si,Silla móvil y mesa fija
+173,ML_512,"92,2",ML,61.0,1621.0,Fijo,Si,Silla móvil y mesa fija
+174,SD_203,"58,8",Sd,26.0,nan,Movil,Si,"Silla móvil, mesa móvil"
+175,SD_202,"58,8",Sd,26.0,nan,Movil,Si,"Silla móvil, mesa móvil"
+176,SD_202,"58,8",Sd,26.0,nan,Movil,Si,"Silla móvil, mesa móvil"
+177,SD_202,"58,8",Sd,26.0,nan,Movil,Si,"Silla móvil, mesa móvil"
+178,,,,,,,,
+179,,,,,,,,
+180,,,,,,,,
+181,O_401,"57,8",O,50.0,5267.0,Fijo,No,Silla móvil y mesa fija
+182,,,,,,,,
+183,,,,,,,,
+184,,,,,,,,
+185,,,,,,,,
+186,,,,,,,,
+187,Y_101,"96,0",Y,60.0,nan,Movil,No,"Silla móvil, mesa móvil"
+188,SD_716,"140,4",Sd,65.0,1105.0,Fijo,Si,Silla móvil y mesa fija
+189,,,,,,,,
+190,,,,,,,,
+191,,,,,,,,
+192,LL_302,"51,6",LL,52.0,5090.0,Movil,No,Pupitre universitario
+193,,,,,,,,
+194,,,,,,,,
+195,,,,,,,,
+196,W_402,"81,8",W,40.0,5014.0,Fijo,Si,Silla móvil y mesa fija
+197,ML_515,"114,9",ML,44.0,1628.0,Movil,Si,"Silla móvil, mesa móvil"
+198,,,,,,,,
+199,W_504,"82,3",W,42.0,5020.0,Fijo,Si,Silla móvil y mesa fija
+200,W_504,"82,3",W,42.0,5020.0,Fijo,Si,Silla móvil y mesa fija
+201,,,,,,,,
+202,,,,,,,,
+203,,,,,,,,
+204,ML_515,"114,9",ML,44.0,1628.0,Movil,Si,"Silla móvil, mesa móvil"
+205,AU_303,"29,4",Au,31.0,5621.0,Movil,No,Pupitre universitario
+206,W_204,"82,4",W,42.0,5007.0,Fijo,Si,Silla móvil y mesa fija
+207,SD_306,"58,8",Sd,26.0,nan,Fijo,Si,Silla móvil y mesa fija
+208,Z_202,"46,4",Z,34.0,nan,Movil,No,"Silla móvil, mesa móvil"
+209,,,,,,,,
+210,,,,,,,,
+211,,,,,,,,
+212,,,,,,,,
+213,,,,,,,,
+214,,,,,,,,
+215,,,,,,,,
+216,,,,,,,,
+217,,,,,,,,
+218,,,,,,,,
+219,AU_402,"46,0",Au,40.0,5632.0,Movil,Si,"Silla móvil, mesa móvil"
+220,Q_306,"86,3",Q,48.0,1454.0,Fijo,SI,Silla móvil y mesa fija
+221,LL_105,"37,8",LL,38.0,5080.0,Movil,SI,Pupitre universitario
+222,LL_104,"38,0",LL,38.0,5079.0,Movil,SI,Pupitre universitario
+223,AU_207,"42,5",Au,30.0,5614.0,Movil,SI,"Silla móvil, mesa móvil"
+224,O_302,"64,2",O,56.0,5262.0,Fijo,No,Silla móvil y mesa fija
+225,W_402,"81,8",W,40.0,5014.0,Fijo,Si,Silla móvil y mesa fija
+226,LL_202,"51,7",LL,32.0,5085.0,Fijo,Si,Silla móvil y mesa fija
+227,W_504,"82,3",W,42.0,5020.0,Fijo,Si,Silla móvil y mesa fija
+228,B_201,"122,8",B,51.0,1439.0,Fijo,No,Silla móvil y mesa fija
+229,SD_202,"58,8",Sd,26.0,nan,Movil,Si,"Silla móvil, mesa móvil"
+230,,,,,,,,
+231,Q_308,"44,5",Q,27.0,1456.0,Fijo,SI,Silla móvil y mesa fija
+232,Q_308,"44,5",Q,27.0,1456.0,Fijo,SI,Silla móvil y mesa fija
+233,,,,,,,,
+234,,,,,,,,
+235,,,,,,,,
+236,,,,,,,,
+237,AU_207,"42,5",Au,30.0,5614.0,Movil,SI,"Silla móvil, mesa móvil"
+238,AU_306,"45,8",Au,32.0,5624.0,Movil,Si,"Silla móvil, mesa móvil"
+239,SD_804,"144,8",Sd,82.0,1118.0,Fijo,Si,Silla móvil y mesa fija
+240,PU_300,"32,6",Pu,35.0,nan,Movil,No,Pupitre universitario
+241,M_100,"72,1",M,63.0,nan,Fijo,No,Silla móvil y mesa fija
+242,ML_515,"114,9",ML,44.0,1628.0,Movil,Si,"Silla móvil, mesa móvil"
+243,ML_614,"109,6",ML,44.0,1627.0,Movil,SI,"Silla móvil, mesa móvil"
+244,ML_515,"114,9",ML,44.0,1628.0,Movil,Si,"Silla móvil, mesa móvil"
+245,W_204,"82,4",W,42.0,5007.0,Fijo,Si,Silla móvil y mesa fija
+246,O_105,"72,7",O,62.0,5254.0,Fijo,No,Silla móvil y mesa fija
+247,ML_617,"146,7",ML,94.0,1625.0,Fijo,SI,Silla móvil y mesa fija
+248,Z_201,"42,3",Z,36.0,nan,Movil,No,"Silla móvil, mesa móvil"
+249,AU_306,"45,8",Au,32.0,5624.0,Movil,Si,"Silla móvil, mesa móvil"
+250,,,,,,,,
+251,,,,,,,,
+252,AU_307,"29,4",Au,31.0,5625.0,Movil,No,Pupitre universitario
+253,,,,,,,,
+254,AU_204,"37,9",Au,40.0,5611.0,Movil,No,Pupitre universitario
+255,SD_801,"140,0",Sd,82.0,1110.0,Fijo,Si,Silla móvil y mesa fija
+256,LL_205,"51,2",LL,32.0,5087.0,Fijo,Si,Silla móvil y mesa fija
+257,AU_303,"29,4",Au,31.0,5621.0,Movil,No,Pupitre universitario
+258,,,,,,,,
+259,,,,,,,,
+260,,,,,,,,
+261,AU_107,"46,3",Au,36.0,5605.0,Movil,Si,"Silla móvil, mesa móvil"
+262,SD_801,"140,0",Sd,82.0,1110.0,Fijo,Si,Silla móvil y mesa fija
+263,LL_201,"51,7",LL,32.0,5084.0,Fijo,Si,Silla móvil y mesa fija
+264,ML_511,"85,4",ML,61.0,1615.0,Fijo,Si,Silla móvil y mesa fija
+265,,,,,,,,
+266,,,,,,,,
+267,ML_617,"146,7",ML,94.0,1625.0,Fijo,SI,Silla móvil y mesa fija
+268,ML_604,"125,7",ML,81.0,1616.0,Fijo,Si,Silla móvil y mesa fija
+269,AU_207,"42,5",Au,30.0,5614.0,Movil,SI,"Silla móvil, mesa móvil"
+270,,,,,,,,
+271,AU_404,"43,7",Au,36.0,5634.0,Movil,Si,Mesa trapezoidal con silla móviles
+272,AU_303,"29,4",Au,31.0,5621.0,Movil,No,Pupitre universitario
+273,,,,,,,,
+274,,,,,,,,

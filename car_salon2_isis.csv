@@ -1,0 +1,15 @@
+,2Salon,Area util_s2,Bloque_s2,Capacidad_s2,Ext_s2,Fijo/Movil_s2,Movil Express_s2,Tipo Mobiliario_s2
+0,B_202,"154,6",B,110.0,1440.0,Fijo,No,Silla móvil y mesa fija
+1,O_403,"57,8",O,50.0,5269.0,Fijo,No,Silla móvil y mesa fija
+2,R_113,"83,5",R,77.0,nan,Fijo,No,Silla y superficie abatible fijas
+3,Z_105,"28,9",Z,27.0,nan,Movil,No,Pupitre universitario
+4,Y_111B,"43,6",Y,24.0,nan,Movil,No,"Silla móvil, mesa móvil"
+5,W_201,"55,8",W,24.0,5004.0,Fijo,Si,Silla móvil y mesa fija
+6,SD_307,"58,2",Sd,26.0,nan,Fijo,Si,Silla móvil y mesa fija
+7,SD_206,"58,8",Sd,26.0,nan,Movil,Si,"Silla móvil, mesa móvil"
+8,Z_202,"46,4",Z,34.0,nan,Movil,No,"Silla móvil, mesa móvil"
+9,AU_207,"42,5",Au,30.0,5614.0,Movil,SI,"Silla móvil, mesa móvil"
+10,LL_105,"37,8",LL,38.0,5080.0,Movil,SI,Pupitre universitario
+11,AU_207,"42,5",Au,30.0,5614.0,Movil,SI,"Silla móvil, mesa móvil"
+12,SD_304,"58,8",Sd,26.0,nan,Fijo,Si,Silla móvil y mesa fija
+13,SD_302,"58,8",Sd,26.0,nan,Fijo,Si,Silla móvil y mesa fija
